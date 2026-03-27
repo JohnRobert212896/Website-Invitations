@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Invitation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h3>You Are Invited To</h3>
+      <h1 id="eventTitle">Wedding Celebration</h1>
+      <p id="eventSubtitle">Join us for a special and memorable occasion</p>
+      <a href="#details" class="btn">View Invitation</a>
+    </div>
+  </section>
+
+  <!-- EVENT DETAILS -->
+  <section class="details" id="details">
+    <h2>Event Details</h2>
+    <div class="details-container">
+      <div class="detail-card">
+        <h3>📅 Date</h3>
+        <p id="eventDateText">December 25, 2026</p>
+      </div>
+      <div class="detail-card">
+        <h3>⏰ Time</h3>
+        <p>6:00 PM</p>
+      </div>
+      <div class="detail-card">
+        <h3>📍 Venue</h3>
+        <p>Grand Event Hall, Manila</p>
+      </div>
+      <div class="detail-card">
+        <h3>👗 Dress Code</h3>
+        <p>Formal / Elegant</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+    <h2>Countdown to the Event</h2>
+    <div class="countdown">
+      <div><span id="days">00</span><p>Days</p></div>
+      <div><span id="hours">00</span><p>Hours</p></div>
+      <div><span id="minutes">00</span><p>Minutes</p></div>
+      <div><span id="seconds">00</span><p>Seconds</p></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <h2>Memorable Moments</h2>
+    <div class="gallery-container">
+      <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176" alt="Event Photo">
+      <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486" alt="Event Photo">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Event Photo">
+    </div>
+  </section>
+
+  <!-- RSVP FORM -->
+  <section class="rsvp">
+    <h2>RSVP Confirmation</h2>
+    <form id="rsvpForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <select id="attendance" required>
+        <option value="">Will you attend?</option>
+        <option value="Yes, I will attend">Yes, I will attend</option>
+        <option value="Sorry, I can't attend">Sorry, I can't attend</option>
+      </select>
+      <textarea id="message" rows="4" placeholder="Leave a message..."></textarea>
+      <button type="submit">Send RSVP</button>
+    </form>
+
+    <div id="rsvpMessage" class="success-message"></div>
+  </section>
+
+  <!-- MUSIC BUTTON -->
+  <button id="musicBtn" class="music-btn">🎵 Play Music</button>
+
+  <!-- AUDIO -->
+  <audio id="bgMusic" loop>
+    <source src="your-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with ❤️ for your special event</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
